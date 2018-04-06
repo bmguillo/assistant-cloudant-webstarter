@@ -33,7 +33,7 @@ The Watson Discovery service searches and ranks responses for other questions, W
 <a name="returnlocal">
 </a>
 
-### Create the services via UI
+### Create the services 
 
 1. In IBM Cloud via UI, create a [Watson Assistant Service](https://console.bluemix.net/catalog/services/watson-assistant-formerly-conversation/) instance or programmatically using IBM Cloud CLI
 
@@ -46,8 +46,7 @@ The Watson Discovery service searches and ranks responses for other questions, W
 
 2. In IBM Cloud, [create a Discovery Service instance](https://console.bluemix.net/registration/?target=/catalog/services/discovery/).
   * Ensure you have service credentials created for your Watson Discovery instance.
-  (pic)
-  *  [Create a data collection and jot down the Collection Id, Configuration Id and Environment Id]. ![title](https://github.com/bmguillo/assistant-with-discovery/blob/master/readme_images/_.png)
+  *  [Create a data collection and jot down the Collection Id, Configuration Id and Environment Id]. 
   * [Ingest the documents into a new Discovery collection].
  
  
