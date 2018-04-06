@@ -22,10 +22,10 @@ The Watson Discovery service searches and ranks responses for other questions, W
 
 ### Before you begin
 
--  Ensure that you have a [Github account] (https://github.com/) in order to fork/clone and create your own repositories.
+-  Ensure that you have a [Github account](https://github.com/) in order to fork/clone and create your own repositories.
 -  Ensure that you have an [IBM Cloud account](https://console.bluemix.net/). Part of this deployment is local but you must still use IBM Cloud.
 -  Download [IBM Cloud CLI](https://console.bluemix.net/docs/cli/reference/bluemix_cli/get_started.html#getting-started) to push changes to your app to IBM Cloud using Cloud Foundry commands
--  Ensure you have the WDC SDK for nodejs modules / code examples: https://console.bluemix.net/docs/services/watson/running-node-examples.html#running-examples-from-the-node-js-sdk
+-  Ensure you download the [WDC SDK](https://console.bluemix.net/docs/services/watson/running-node-examples.html#running-examples-from-the-node-js-sdk) for nodejs modules / code examples
 -  Ensure that you have installed nodejs: https://nodejs.org/
 -  Ensure you have a text editor like Atom: https://atom.io/
 
