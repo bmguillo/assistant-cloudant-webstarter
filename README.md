@@ -39,7 +39,7 @@ The Watson Discovery service searches and ranks responses for other questions, W
 
   * Ensure you have [service credentials](https://console.bluemix.net/services/conversation/cee5f30d-88a9-4327-93c0-d7c4d9b067c5?paneId=credentials&ace_config=%7B%22region%22%3A%22us-south%22%2C%22orgGuid%22%3A%2262531d4d-5672-449d-b0ec-56f8ff84e9ad%22%2C%22spaceGuid%22%3A%227fb1a1b4-8c0c-460c-9656-70517b3abb92%22%2C%22redirect%22%3A%22https%3A%2F%2Fconsole.bluemix.net%2Fdashboard%2Fapps%2F%22%2C%22bluemixUIVersion%22%3A%22v6%22%2C%22crn%22%3A%22crn%3Av1%3Abluemix%3Apublic%3A%3Aus-south%3As%2F7fb1a1b4-8c0c-460c-9656-70517b3abb92%3Acee5f30d-88a9-4327-93c0-d7c4d9b067c5%3Acf-service-instance%3A%22%2C%22id%22%3A%22cee5f30d-88a9-4327-93c0-d7c4d9b067c5%22%7D&env_id=ibm%3Ayp%3Aus-south) created for your Watson Assistant instance. 
   
-  * [Create a workspace](https://watson-assistant.ng.bluemix.net/us-south/cee5f30d-88a9-4327-93c0-d7c4d9b067c5/workspaces), use the workspace sample like I did or ![import a workspace](https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/import%20workspace.png) and jot down the workspaceid] 
+  * [Create a workspace](https://watson-assistant.ng.bluemix.net/us-south/cee5f30d-88a9-4327-93c0-d7c4d9b067c5/workspaces), use the workspace sample like I did or ![import a workspace](https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/import%20ws.png) and jot down the workspaceid] 
   A workspace is a container for all the artifacts that define the behavior of your service (ie: intents, entities and chat    flows). 
  ![title](https://github.com/bmguillo/assistant-with-discovery/blob/master/readme_images/workspace.png)
   * Import or create new intents and entitities
