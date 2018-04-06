@@ -53,9 +53,9 @@ https://console.bluemix.net/catalog/services/watson-assistant-formerly-conversat
  ### Create a sample app using Boilerplate & connect to services(Cloudant & Assistant)
  3. Create a sample app using the nodejs SDK boilerplate and connect both Watson Assistant & Cloudant 
  
- 4. git clone https://github.com/ibmecod/nodejs-cloudant then do the following after
+ 4. git clone https://github.com/bmguillo/assistant-cloudant-webstarter then do the following after
     cd into this project's root directory
-    Copy the value for the VCAP_SERVICES envirionment variable from the application running in Bluemix and paste it in a   vcap-local.json file
+    Copy the value for the VCAP_SERVICES envirionment variable from the application running in Bluemix and paste it in a vcap-local.json file
     Run npm install to install the app's dependencies
     Run npm start to start the app
     
