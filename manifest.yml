@@ -1,0 +1,19 @@
+---
+declared-services:
+  Watson Assistant:
+    label: Watson Assistant(formerly Conversation)
+    plan: lite
+  Watson Discovery:
+    label: Discovery
+    plan: lite
+  nodejs-cloudantNoSQLDB:
+    label: Cloudant NoSQL DB
+    plan: Lite
+applications:
+- name: nodejsCloudantwebapp
+  random-route: true
+  memory: 256M
+  services:
+  - nodejs-cloudantNoSQLDB
+  - Watson Assistant
+  - Watson Discovery
