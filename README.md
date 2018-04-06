@@ -24,8 +24,8 @@ The Watson Discovery service searches and ranks responses for other questions, W
 
 -  Ensure that you have a [Github account](https://github.com/) in order to fork/clone and create your own repositories.
 -  Ensure that you have an [IBM Cloud account](https://console.bluemix.net/). Part of this deployment is local but you must still use IBM Cloud.
--  Download [IBM Cloud CLI](https://console.bluemix.net/docs/cli/reference/bluemix_cli/get_started.html#getting-started) to push changes to your app to IBM Cloud using Cloud Foundry commands
--  Ensure you download the [WDC SDK](https://console.bluemix.net/docs/services/watson/running-node-examples.html#running-examples-from-the-node-js-sdk) for nodejs modules / code examples
+-  Download [IBM Cloud CLI](https://console.bluemix.net/docs/cli/reference/bluemix_cli/get_started.html#getting-started) to push changes to your app to IBM Cloud using Cloud Foundry commands in project folder
+-  Ensure you download the [WDC SDK](https://console.bluemix.net/docs/services/watson/running-node-examples.html#running-examples-from-the-node-js-sdk) for nodejs modules in project folder & other code examples
 -  Ensure that you have [installed nodejs](https://nodejs.org/)
 -  Ensure you have downloaded a text editor like [Atom](https://atom.io/)
 
@@ -49,38 +49,17 @@ The Watson Discovery service searches and ranks responses for other questions, W
   * [Ingest the documents into a new Discovery collection].
  
  
- ### Create a sample app using Boilerplate & connect to services(Cloudant & Assistant)
- 3. Create a sample app using the nodejs SDK boilerplate and connect both Watson Assistant & Cloudant 
- 
- 4. git clone https://github.com/bmguillo/assistant-cloudant-webstarter then do the following after
+ ### Create a sample web app via IBM Cloud using nodejs SDK Boilerplate & connect to services(Cloudant, Watson Assistant & Watson Discovery)
+ 3. Create a sample app using the nodejs SDK boilerplate and connect Watson Assistant, Watson Discovery & Cloudant to it via UI (pic)
+ ### Building/Running locally the project
+ 4. Clone/Fork my repository as a base for your own project and to save it locally https://github.com/bmguillo/assistant-cloudant-webstarter then do the following after
     cd into this project's root directory
-    Copy the value for the VCAP_SERVICES envirionment variable from the application running in Bluemix and paste it in a vcap-local.json file
-    Run npm install to install the app's dependencies
-    Run npm start to start the app
+    Copy the value for the VCAP_SERVICES environment variable from the application running in IBM Cloud and paste it in a vcap-local.json file
+    Run npm install to install the app's dependencies will be located in package*.json
+    Run node app.js to build/start the app
     
-    
-### (Optional) Importing a workspace from a file
 
-### Building/Running locally
-
-To build the application(UNDER CONSTRUCTION NOT YET WORKING):
-
-1. Clone/Fork my repository as a base for your own project and to save it locally
-   git clone https://github.com/bmguillo/assistant-with-discovery
-   
-2. Change/add your credentials in .env file for the following: 
- * Watson Assistant username, password
- * Watson Assistant workspace id
- * Watson Assistant api gateway
- * Watson Discovery username
- * Watson Discovery password
- * Watson Discovery collection id
- * Watson Discovery environment id
- * Watson Discovery api gateway
- 
- 
-
- * Access the running app in a browser at http://localhost:3000
+ * Access the running app in a browser at webappname.mybluemix.net
  
 
 
