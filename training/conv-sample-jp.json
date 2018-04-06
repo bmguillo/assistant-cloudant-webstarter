@@ -1,0 +1,366 @@
+{
+  "name": "休講情報デモ",
+  "created": "2017-08-07T08:09:07.899Z",
+  "intents": [
+    {
+      "intent": "cancel_lecture",
+      "created": "2017-08-07T08:10:12.221Z",
+      "updated": "2017-08-07T08:11:17.959Z",
+      "examples": [
+        {
+          "text": "休講を知りたい",
+          "created": "2017-08-07T08:10:24.450Z",
+          "updated": "2017-08-07T08:10:24.450Z"
+        },
+        {
+          "text": "休講を教えて",
+          "created": "2017-08-07T08:10:30.651Z",
+          "updated": "2017-08-07T08:10:30.651Z"
+        },
+        {
+          "text": "休講情報を教えて下さい",
+          "created": "2017-08-07T08:10:43.036Z",
+          "updated": "2017-08-07T08:10:43.036Z"
+        },
+        {
+          "text": "休講はありますか",
+          "created": "2017-08-07T08:10:50.652Z",
+          "updated": "2017-08-07T08:10:50.652Z"
+        },
+        {
+          "text": "休講があるか知りたいです",
+          "created": "2017-08-07T08:11:17.959Z",
+          "updated": "2017-08-07T08:11:17.959Z"
+        }
+      ],
+      "description": null
+    },
+    {
+      "intent": "greetings",
+      "created": "2017-08-07T08:09:38.365Z",
+      "updated": "2017-08-08T05:35:31.127Z",
+      "examples": [
+        {
+          "text": "こんにちは",
+          "created": "2017-08-08T05:34:37.970Z",
+          "updated": "2017-08-08T05:34:37.970Z"
+        },
+        {
+          "text": "今日は",
+          "created": "2017-08-08T05:34:58.754Z",
+          "updated": "2017-08-08T05:34:58.754Z"
+        },
+        {
+          "text": "hello",
+          "created": "2017-08-08T05:35:02.817Z",
+          "updated": "2017-08-08T05:35:02.817Z"
+        },
+        {
+          "text": "おはよう",
+          "created": "2017-08-08T05:35:11.211Z",
+          "updated": "2017-08-08T05:35:11.211Z"
+        },
+        {
+          "text": "こんばんは",
+          "created": "2017-08-08T05:35:31.127Z",
+          "updated": "2017-08-08T05:35:31.127Z"
+        }
+      ],
+      "description": null
+    }
+  ],
+  "updated": "2017-08-21T10:47:37.645Z",
+  "entities": [
+    {
+      "entity": "sys-date",
+      "values": [],
+      "created": "2017-08-07T08:11:32.454Z",
+      "updated": "2017-08-07T08:11:32.454Z",
+      "metadata": null,
+      "description": null
+    },
+    {
+      "entity": "answer",
+      "values": [
+        {
+          "value": "no",
+          "created": "2017-08-08T05:04:50.391Z",
+          "updated": "2017-08-08T05:05:05.868Z",
+          "metadata": null,
+          "synonyms": [
+            "だめ",
+            "ダメ",
+            "いいや",
+            "いいえ",
+            "no"
+          ]
+        },
+        {
+          "value": "yes",
+          "created": "2017-08-08T05:03:49.414Z",
+          "updated": "2017-08-08T05:04:44.867Z",
+          "metadata": null,
+          "synonyms": [
+            "了解",
+            "はい",
+            "yes"
+          ]
+        }
+      ],
+      "created": "2017-08-08T05:03:43.686Z",
+      "updated": "2017-08-08T05:05:05.868Z",
+      "metadata": null,
+      "description": null,
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "created": "2017-08-07T08:11:36.789Z",
+      "updated": "2017-08-07T08:11:36.789Z",
+      "metadata": null,
+      "description": null
+    }
+  ],
+  "language": "ja",
+  "metadata": {
+    "api_version": {
+      "major_version": "v1",
+      "minor_version": "2017-05-26"
+    }
+  },
+  "description": "",
+  "dialog_nodes": [
+    {
+      "title": null,
+      "output": {},
+      "parent": null,
+      "context": null,
+      "created": "2017-08-07T08:12:44.364Z",
+      "updated": "2017-08-07T14:32:05.631Z",
+      "metadata": null,
+      "next_step": null,
+      "conditions": "#cancel_lecture",
+      "description": null,
+      "dialog_node": "cancel_lecture",
+      "previous_sibling": "ようこそ"
+    },
+    {
+      "title": null,
+      "output": {},
+      "parent": "cancel_lecture",
+      "context": null,
+      "created": "2017-08-07T08:43:25.506Z",
+      "updated": "2017-08-08T05:49:40.252Z",
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@sys-number",
+      "description": null,
+      "dialog_node": "confirm_student_id",
+      "previous_sibling": null
+    },
+    {
+      "title": null,
+      "output": {},
+      "parent": "confirm_student_id",
+      "context": null,
+      "created": "2017-08-14T06:01:52.113Z",
+      "updated": "2017-08-14T06:02:52.764Z",
+      "metadata": null,
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "confirm_student_id"
+      },
+      "conditions": "anything_else",
+      "description": null,
+      "dialog_node": "node_1_1502690511816",
+      "previous_sibling": "node_1_1502168131969"
+    },
+    {
+      "title": null,
+      "output": {
+        "text": {
+          "values": [
+            "<? $student_name ?> さんの <? $date ?>の休講は1限の数学です。"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_3_1502169052465",
+      "context": null,
+      "created": "2017-08-08T05:12:57.476Z",
+      "updated": "2017-08-08T05:14:15.705Z",
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@answer:yes",
+      "description": null,
+      "dialog_node": "node_4_1502169177217",
+      "previous_sibling": null
+    },
+    {
+      "title": null,
+      "output": {
+        "text": {
+          "values": [
+            "<? $student_name ?> さんですね。いつの休講ですか？"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "confirm_student_id",
+      "context": null,
+      "created": "2017-08-08T04:55:32.200Z",
+      "updated": "2017-08-21T05:58:14.762Z",
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@answer:yes",
+      "description": null,
+      "dialog_node": "node_1_1502168131969",
+      "previous_sibling": "node_2_1502168816673"
+    },
+    {
+      "title": null,
+      "output": {
+        "text": {
+          "values": [
+            "@sys-date ですね。よろしいですか？"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1502168131969",
+      "context": {
+        "date": "<? entities[0].value ?>"
+      },
+      "created": "2017-08-08T05:10:52.708Z",
+      "updated": "2017-08-08T08:15:03.057Z",
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@sys-date",
+      "description": null,
+      "dialog_node": "node_3_1502169052465",
+      "previous_sibling": null
+    },
+    {
+      "title": null,
+      "output": {
+        "text": {
+          "values": [
+            "休講情報システムにようこそ。ご用件を入力してください。"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": null,
+      "context": null,
+      "created": "2017-08-07T08:09:43.868Z",
+      "updated": "2017-08-07T08:12:32.781Z",
+      "metadata": null,
+      "next_step": null,
+      "conditions": "welcome",
+      "description": null,
+      "dialog_node": "ようこそ",
+      "previous_sibling": null
+    },
+    {
+      "title": null,
+      "output": {
+        "text": {
+          "values": [
+            "学生番号を教えて下さい。"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "confirm_student_id",
+      "context": null,
+      "created": "2017-08-08T05:06:56.946Z",
+      "updated": "2017-08-08T05:10:27.364Z",
+      "metadata": null,
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "cancel_lecture"
+      },
+      "conditions": "@answer:no",
+      "description": null,
+      "dialog_node": "node_2_1502168816673",
+      "previous_sibling": null
+    },
+    {
+      "title": null,
+      "output": {
+        "text": {
+          "values": [
+            "解釈できませんでした。申し訳ありませんが違う表現を試していただけますか。",
+            "恐れ入りますが表現を変えていただけますか。解釈できませんでした。"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": null,
+      "context": null,
+      "created": "2017-08-07T08:09:43.868Z",
+      "updated": "2017-08-07T08:09:43.868Z",
+      "metadata": null,
+      "next_step": null,
+      "conditions": "anything_else",
+      "description": null,
+      "dialog_node": "その他",
+      "previous_sibling": "cancel_lecture"
+    },
+    {
+      "type": "response_condition",
+      "title": null,
+      "output": {
+        "text": {
+          "values": [
+            "休講情報ですね。学生番号を教えて下さい(12345 or 54321 or 11111)。"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "cancel_lecture",
+      "context": null,
+      "created": "2017-08-07T08:13:52.504Z",
+      "updated": "2017-08-08T08:22:43.419Z",
+      "metadata": null,
+      "next_step": null,
+      "conditions": " ",
+      "description": null,
+      "dialog_node": "node_3_1502093631342",
+      "previous_sibling": "confirm_student_id"
+    },
+    {
+      "type": "response_condition",
+      "title": null,
+      "output": {
+        "text": {
+          "values": [
+            "<? $student_id ?> ですね。よろしいですか"
+          ]
+        },
+        "action": {
+          "command": "query_student_name_by_id",
+          "student_id": "<? $student_id ?>"
+        }
+      },
+      "parent": "confirm_student_id",
+      "context": {
+        "student_id": "<? entities[0].value ?>"
+      },
+      "created": "2017-08-07T08:44:12.468Z",
+      "updated": "2017-08-21T10:47:37.645Z",
+      "metadata": null,
+      "next_step": null,
+      "conditions": " ",
+      "description": null,
+      "dialog_node": "node_5_1502095452192",
+      "previous_sibling": "node_1_1502690511816"
+    }
+  ],
+  "workspace_id": "806ef998-3f54-434d-a7d9-fcb60acc748d",
+  "counterexamples": [],
+  "learning_opt_out": false
+}
