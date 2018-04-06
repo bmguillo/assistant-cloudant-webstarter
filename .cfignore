@@ -1,0 +1,8 @@
+node_modules/
+.idea/
+coverage
+npm-debug.log
+readme_images/
+readme_images2/
+test
+local.env
