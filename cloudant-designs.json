@@ -1,0 +1,12 @@
+{
+  "docs": [
+    {
+      "_id": "_design/convlogs",
+      "views": {
+        "all": {
+          "map": "function (doc) {\n  if (doc.type == \"conv_log\") {\n    var value = {\n      conv_id: doc.context.conversation_id,\n      input: doc.input.text,\n      output: doc.output.text[0],\n      timestamp: doc.timestamp\n    }\n    if (doc.intents.length) {\n      var intent = doc.intents[0];\n      value[\"intent\"] = intent.intent;\n      value[\"confidence\"] = intent.confidence;\n    }\n    if (doc.entities.length) {\n      var entity = doc.entities[0];\n      value[\"entity\"] = entity.entity;\n      value[\"entity_value\"] = entity.value;\n    }\n    emit( doc._id, value);\n  }\n}"
+        }
+      }
+    }
+  ]
+}
