@@ -33,7 +33,11 @@ The Watson Discovery service searches and ranks responses for other questions, W
 <a name="returnlocal">
 </a>
 
-### Create the services 
+ ### Create a sample web app via IBM Cloud using nodejs SDK Boilerplate connected to Cloudant(automatically)
+ 3.  
+  (pic)
+ 
+### Create the Watson AI services 
 
 1. In IBM Cloud via UI, create a [Watson Assistant Service](https://console.bluemix.net/catalog/services/watson-assistant-formerly-conversation/) instance or programmatically using IBM Cloud CLI
 
@@ -47,9 +51,11 @@ The Watson Discovery service searches and ranks responses for other questions, W
   *  [Create a data collection and jot down the Collection Id, Configuration Id and Environment Id]. 
   * [Ingest the documents into a new Discovery collection].
  
- 
- ### Create a sample web app via IBM Cloud using nodejs SDK Boilerplate & connect to services(Cloudant, Watson Assistant & Watson Discovery)
- 3. Create a sample app using the nodejs SDK boilerplate and connect Watson Assistant, Watson Discovery & Cloudant to it via UI (pic)
+ ### Connect your two services (Watson Assistant and Watson discovery) to your nodejs SDK webstarter app 
+ 3. Connect your two services(Watson Assistant and Watson discovery) via the IBM Cloud UI to your nodejs SDK webstarter app 
+  (pic)
+
+
  ### Building/Running locally the project
  4. Clone/Fork my repository as a base for your own project and to save it locally https://github.com/bmguillo/assistant-cloudant-webstarter then do the following after
     cd into this project's root directory
