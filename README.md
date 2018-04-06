@@ -34,35 +34,38 @@ The Watson Discovery service searches and ranks responses for other questions, W
 </a>
 
  ### Create a sample web app via IBM Cloud using nodejs SDK Boilerplate connected to Cloudant(automatically)
- 3.  
+ 1.  
   (pic)
  
 ### Create the Watson AI services 
 
-1. In IBM Cloud via UI, create a [Watson Assistant Service](https://console.bluemix.net/catalog/services/watson-assistant-formerly-conversation/) instance or programmatically using IBM Cloud CLI
+ 2. In IBM Cloud via UI, create a [Watson Assistant Service](https://console.bluemix.net/catalog/services/watson-assistant-formerly-conversation/) instance or programmatically using IBM Cloud CLI
 
   * Ensure you have [service credentials](https://console.bluemix.net/services/conversation/cee5f30d-88a9-4327-93c0-d7c4d9b067c5?paneId=credentials&ace_config=%7B%22region%22%3A%22us-south%22%2C%22orgGuid%22%3A%2262531d4d-5672-449d-b0ec-56f8ff84e9ad%22%2C%22spaceGuid%22%3A%227fb1a1b4-8c0c-460c-9656-70517b3abb92%22%2C%22redirect%22%3A%22https%3A%2F%2Fconsole.bluemix.net%2Fdashboard%2Fapps%2F%22%2C%22bluemixUIVersion%22%3A%22v6%22%2C%22crn%22%3A%22crn%3Av1%3Abluemix%3Apublic%3A%3Aus-south%3As%2F7fb1a1b4-8c0c-460c-9656-70517b3abb92%3Acee5f30d-88a9-4327-93c0-d7c4d9b067c5%3Acf-service-instance%3A%22%2C%22id%22%3A%22cee5f30d-88a9-4327-93c0-d7c4d9b067c5%22%7D&env_id=ibm%3Ayp%3Aus-south) for your Watson Assistant service or create them if they do not exist and make note of [username/password/API gateway](https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/watsonapi.png) you will need it later.
   
   * [Create a workspace](https://watson-assistant.ng.bluemix.net/us-south/cee5f30d-88a9-4327-93c0-d7c4d9b067c5/workspaces), like I did use the [workspace sample](https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/workspace%20sample.png) or [import a workspace](https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/import%20ws.png) and jot down the [workspaceid](https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/workspace.png) A workspace is a container for all the artifacts that define the behavior of your service (ie: intents, entities and chat flows). 
   * Import or create new intents and entitities for Watson Assistant(if you are creating a workspace from scratch)
 
-2. In IBM Cloud, [create a Discovery Service instance](https://console.bluemix.net/registration/?target=/catalog/services/discovery/).
+ 3. In IBM Cloud, [create a Discovery Service instance](https://console.bluemix.net/registration/?target=/catalog/services/discovery/).
   * Ensure you have service credentials created for your Watson Discovery instance.
   *  [Create a data collection and jot down the Collection Id, Configuration Id and Environment Id]. 
   * [Ingest the documents into a new Discovery collection].
  
  ### Connect your two services (Watson Assistant and Watson discovery) to your nodejs SDK webstarter app 
- 3. Connect your two services(Watson Assistant and Watson discovery) via the IBM Cloud UI to your nodejs SDK webstarter app 
+ 4. Connect your two services(Watson Assistant and Watson discovery) via the IBM Cloud UI to your nodejs SDK webstarter app 
   (pic)
 
 
  ### Building/Running locally the project
- 4. Clone/Fork my repository as a base for your own project and to save it locally https://github.com/bmguillo/assistant-cloudant-webstarter then do the following after
-    cd into this project's root directory
-    Copy the value for the VCAP_SERVICES environment variable from the application running in IBM Cloud and paste it in a vcap-local.json file
-    Run npm install to install the app's dependencies will be located in package*.json
-    Run node app.js to build/start the app
+  5. Clone/Fork my repository as a base for your own project in command prompt and save it locally using this command:
+   git clone https://github.com/bmguillo/assistant-cloudant-webstarter 
+   * To install wdc sdk run 'npm install watson-developer-cloud -s' to run cloud foundry commands in command prompt ie. bx cf app push
+   * Rename your local.env.sample file to .env and fill in credentials from above
+   * to create package.json file run 'npm init' and hit enter on every prompt
+   * install dotenv tools to store environment variables 'npm install dotenv 's'
+   
     
+   
 
  * Access the running app in a browser at webappname.mybluemix.net
  
