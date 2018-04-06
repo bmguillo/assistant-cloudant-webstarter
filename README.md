@@ -5,13 +5,13 @@ This application demonstrates how you can combine the [Watson Assistant](https:/
 
 ## How the app works
 
+The app uses two Watson services and a Cloud Foundry service: Watson Assistant, Watson Discovery & Cloudant 
 
-The app has a conversational interface that consists of the end user asking questions to assist in their daily work.
-These questions are called intents and further categorized by entities for clarity. 
-The app uses two Watson services: Watson Assistant and Discovery. 
-The Watson Assistant service powers the basic Q&A using intents, relationships and natural language
-The Watson Discovery service searches and ranks responses for other questions, Watson Assistant cannot answer.
-Cloudant NoSQL DB for storage of chat and API calls
+This web app is built from the node.js SDK webstarter within IBM Cloud connected to Cloudant.
+
+It has a cognitive conversational interface that the Watson Assistant service provides that consists of the end user asking questions/giving commands to the cognitive car example workspace and powers the basic Q&A using intents(questions/commands), entities(keywords used to further clarify & categorize intents), relationships and natural language 
+
+The Watson Discovery service searches and ranks responses for other questions, Watson Assistant cannot answer and uses Cloudant NoSQL DB for storage of chat and API calls
 
 
 ## Getting Started locally
