@@ -20,12 +20,12 @@ Cloudant NoSQL DB for storage of chat and API calls
 
 ### Before you begin
 
--  Ensure that you have an [IBM Cloud account][sign_up]. Part of this deployment is local but you must still use IBM Cloud.
 -  Ensure that you have a https://github.com/ account in order to fork/clone and create your own repositories.
--  Ensure you have the WDC SDK for nodejs modules for nodejs code examples: https://console.bluemix.net/docs/services/watson/running-node-examples.html#running-examples-from-the-node-js-sdk
--  Ensure you have a text editor like Atom: https://atom.io/
--  Ensure that you have installed nodejs: https://nodejs.org/
+-  Ensure that you have an [IBM Cloud account][sign_up]. Part of this deployment is local but you must still use IBM Cloud.
 -  Download IBM Cloud CLI to push changes to your app to IBM Cloud using Cloud Foundry commands: https://console.bluemix.net/docs/cli/reference/bluemix_cli/get_started.html#getting-started
+-  Ensure you have the WDC SDK for nodejs modules / code examples: https://console.bluemix.net/docs/services/watson/running-node-examples.html#running-examples-from-the-node-js-sdk
+-  Ensure that you have installed nodejs: https://nodejs.org/
+-  Ensure you have a text editor like Atom: https://atom.io/
 
 
 <a name="returnlocal">
@@ -63,7 +63,7 @@ https://console.bluemix.net/catalog/services/watson-assistant-formerly-conversat
     
 
 ### (Optional) Create the services via CLI
-### (Optional) Import a workspace
+### (Optional) Importing a workspace from a file
 
 ### Building/Running locally
 
