@@ -1,4 +1,4 @@
-# Watson Assistant with Discovery using nodejs UNDER CONSTRUCTION
+# Watson Assistant with Cloudant & Webstarter Boilerplatein IBM Cloud using nodejs 
 [![Build Status](https://travis-ci.org/watson-developer-cloud/assistant-with-discovery.svg?branch=master)](http://travis-ci.org/watson-developer-cloud/assistant-with-discovery)
 
 This application demonstrates how you can combine the [Watson Assistant](https://console.bluemix.net/docs/services/conversation/index.html#about) and [Discovery](http://www.ibm.com/watson/developercloud/doc/discovery/#overview) services to allow IBMers to get answers to a wide range of questions to help them in their work using plain English or natural language understanding. First, users pose a questions to the Watson Assistant service. Short tail answers are routed to Watson Assistant if it is able to confidently answer, if not the app executes a call to Discovery, for long tail answers.
