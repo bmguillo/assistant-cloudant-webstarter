@@ -41,7 +41,6 @@ The Watson Discovery service searches and ranks responses for other questions, W
   
   * [Create a workspace](https://watson-assistant.ng.bluemix.net/us-south/cee5f30d-88a9-4327-93c0-d7c4d9b067c5/workspaces), like I did use the [workspace sample](https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/workspace%20sample.png) or [import a workspace](https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/import%20ws.png) and jot down the [workspaceid](https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/workspace.png)
   A workspace is a container for all the artifacts that define the behavior of your service (ie: intents, entities and chat    flows). 
- ![title](https://github.com/bmguillo/assistant-with-discovery/blob/master/readme_images/workspace.png)
   * Import or create new intents and entitities
 
 2. In IBM Cloud, [create a Discovery Service instance](https://console.bluemix.net/registration/?target=/catalog/services/discovery/).
