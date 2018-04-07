@@ -53,7 +53,7 @@ The Watson Discovery service searches and ranks responses for other questions, W
  
  ### Connect your two services (Watson Assistant and Watson discovery) to your nodejs SDK webstarter app 
  4. Connect your two services(Watson Assistant and Watson discovery) via the IBM Cloud UI to your nodejs SDK webstarter app 
-  (pic)
+  by clicking on your web app service running in Step 1 and clicking on connections then [create connection], the app will have to be restaged to make the newly connected services available for use.
 
 
  ### Building/Running locally the project
