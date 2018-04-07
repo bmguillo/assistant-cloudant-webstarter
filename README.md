@@ -65,8 +65,11 @@ The Watson Discovery service searches and ranks responses for other questions, W
   
    ### Deploying(Pushing your app to IBM Cloud via Cloud Foundry command)
    6. Run bx cf push <appname> which points to your manifest.yml file
- ![test](https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/viewdetailsworkspaceid.png)
- 
+ ![test](https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/buildapp.png)
+  ![test](https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/bindapp.png)
+  ![test](https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/stageapp.png)
+  ![test](https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/destroycontainer.png)
+  ![test](https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/startapp.png)
  
  
  
