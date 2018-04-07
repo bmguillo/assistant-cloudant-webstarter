@@ -65,7 +65,7 @@ The Watson Discovery service searches and ranks responses for other questions, W
   
    ### Deploying(Pushing your app to IBM Cloud via Cloud Foundry command)
    6. Run bx cf push <appname> which points to your manifest.yml file
- ![test][Watson Assistant](https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/viewdetailsworkspaceid.png)
+ ![test](https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/viewdetailsworkspaceid.png)
  
  
  
