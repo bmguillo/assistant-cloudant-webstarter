@@ -58,29 +58,25 @@ The Watson Discovery service searches and ranks responses for other questions, W
  ### Updating & Building Your Project Locally
   5. Clone/Fork my repository as a base for your own project in command prompt and save it locally using this command:
    git clone https://github.com/bmguillo/assistant-cloudant-webstarter 
-   * To install wdc sdk run 'npm install watson-developer-cloud -s' to run cloud foundry commands in command prompt ie. bx   cf app push
+   * To install wdc sdk run 'npm install watson-developer-cloud -s' to run cloud foundry commands in command prompt 
    * Rename your local.env.sample file to .env and fill in credentials from above
    * to create package.json file run 'npm init' and hit enter on every prompt
    * install dotenv tools to store environment variables 'npm install dotenv 's'
+   * Update your project
+   * run node app.js to build your project
+   ![test](https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/buildapp.png)
   
    ### Deploying(Pushing your app to IBM Cloud via Cloud Foundry command)
    6. Run bx cf push <appname> which points to your manifest.yml file
- ![test](https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/buildapp.png)
+ 
   ![test](https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/bindapp.png)
   ![test](https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/stageapp.png)
   ![test](https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/destroycontainer.png)
   ![test](https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/startapp.png)
  
- 
- 
- 
- 
- 
- 
- 
    ### Running your app
-   7.Access the running app in a browser at webappname.mybluemix.net
- 
+   7.Access the running app in a browser at <webappname>.mybluemix.net
+   ![test](https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/startapp.png)
 
 
 ---
