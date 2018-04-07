@@ -66,9 +66,8 @@ The Watson Discovery service searches and ranks responses for other questions, W
   
    ### Deploying(Pushing your app to IBM Cloud via Cloud Foundry command)
    6. 
-   
-   ### Running locally the project
-    7. Access the running app in a browser at webappname.mybluemix.net
+   ### Running your app
+   7.Access the running app in a browser at webappname.mybluemix.net
  
 
 
