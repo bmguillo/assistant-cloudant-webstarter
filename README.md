@@ -18,8 +18,6 @@ The Watson Discovery service searches and ranks responses for other questions, W
 
 ## Getting Started locally
 
-<img src="readme_images/deploy-locally.png"></img>
-
 ![test](https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/flow.png)
 
 
