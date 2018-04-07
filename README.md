@@ -1,4 +1,4 @@
-# Webstarter/Boilerplate web app in IBM Cloud connected to IBM Cloudant with Watson Assistant embedded (Watson Discovery under construction)
+# IBM Cloud webstarter app connected to IBM Cloudant with Watson Assistant embedded (Watson Discovery under construction)
 [![Build Status](https://travis-ci.org/watson-developer-cloud/assistant-with-discovery.svg?branch=master)](http://travis-ci.org/watson-developer-cloud/assistant-with-discovery)
 
 This application demonstrates how you can combine the [Watson Assistant](https://console.bluemix.net/docs/services/conversation/index.html#about) and [Discovery](http://www.ibm.com/watson/developercloud/doc/discovery/#overview) services to allow a user to execute commands/ask questionsusing plain English or natural language understanding. 
