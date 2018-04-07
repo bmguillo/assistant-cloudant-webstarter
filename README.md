@@ -76,7 +76,7 @@ The Watson Discovery service searches and ranks responses for other questions, W
  
    ### Running your app
    7.Access the running app in a browser at <webappname>.mybluemix.net
-   ![test](https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/startapp.png)
+   ![test](https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/webapp.png)
 
 
 ---
