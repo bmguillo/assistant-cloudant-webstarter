@@ -64,7 +64,17 @@ The Watson Discovery service searches and ranks responses for other questions, W
    * install dotenv tools to store environment variables 'npm install dotenv 's'
   
    ### Deploying(Pushing your app to IBM Cloud via Cloud Foundry command)
-   6. 
+   6. Run bx cf push <appname> which points to your manifest.yml file
+ (https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/viewdetailsworkspaceid.png)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
    ### Running your app
    7.Access the running app in a browser at webappname.mybluemix.net
  
