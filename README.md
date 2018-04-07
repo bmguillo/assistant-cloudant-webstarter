@@ -20,6 +20,9 @@ The Watson Discovery service searches and ranks responses for other questions, W
 
 <img src="readme_images/deploy-locally.png"></img>
 
+![test](https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/flow.png)
+
+
 ### Before you begin
 
 -  Ensure that you have a [Github account](https://github.com/) in order to fork/clone and create your own repositories.
@@ -33,7 +36,6 @@ The Watson Discovery service searches and ranks responses for other questions, W
 <a name="returnlocal">
 </a>
 
-![test](https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/flow.png)
 
  ### Create a sample web app via IBM Cloud using nodejs SDK Boilerplate connected to Cloudant(automatically)
  1.  In IBM Cloud via UI, click on [catalog](https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/catalog.png) then click on [boilerplates](https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/boilerplate.png) then click on [nodejs sdk](https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/nodejswebstarter.png) fill out form, click [create](https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/cloudfoundryapp.png) then navigate to [dashboard](https://github.com/bmguillo/assistant-cloudant-webstarter/blob/master/public/img/cloudfoundryapprunning.png) to see your web app running
