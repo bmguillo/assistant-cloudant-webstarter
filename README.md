@@ -56,18 +56,19 @@ The Watson Discovery service searches and ranks responses for other questions, W
   by clicking on your web app service running in Step 1 and clicking on connections then [create connection], the app will have to be restaged to make the newly connected services available for use.
 
 
- ### Building/Running locally the project
+ ### Updating & Building Your Project Locally
   5. Clone/Fork my repository as a base for your own project in command prompt and save it locally using this command:
    git clone https://github.com/bmguillo/assistant-cloudant-webstarter 
    * To install wdc sdk run 'npm install watson-developer-cloud -s' to run cloud foundry commands in command prompt ie. bx cf app push
    * Rename your local.env.sample file to .env and fill in credentials from above
    * to create package.json file run 'npm init' and hit enter on every prompt
    * install dotenv tools to store environment variables 'npm install dotenv 's'
+  
+   ### Deploying(Pushing your app to IBM Cloud via Cloud Foundry command)
+   6. 
    
-    
-   
-
- * Access the running app in a browser at webappname.mybluemix.net
+   ### Running locally the project
+    7. Access the running app in a browser at webappname.mybluemix.net
  
 
 
